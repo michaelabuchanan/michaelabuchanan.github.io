@@ -4,6 +4,11 @@ img{
   margin-right: auto;
 }
 
+a:visited
+{
+  color: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -44,11 +49,6 @@ img{
   text-align: left;
 }
 
-.codebox
-{
-
-}
-
 .subject
 {
   font-size: 28px;
@@ -73,14 +73,9 @@ img{
   background: blue;
 }
 
-.red
+.blue
 {
-  color: red;
-}
-
-.yellow
-{
-  color: yellow;
+  color: cyan;
 }
 
 .green

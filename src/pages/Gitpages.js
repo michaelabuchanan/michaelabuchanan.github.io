@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import react_logo from "../react_logo.jpg"
 import git_sh from "../git_sh.png"
@@ -24,19 +25,19 @@ function Gitpages() {
 
         <p><strong>How to host your React app on Git-Pages for free </strong></p>
         <img src={react_logo} alt="react logo" height="350" width="500"/>
-        <p className="contents"><code><span className="red"><a href="#overview">Overview</a></span> -&gt; <span className="yellow">Prerequisites</span> -&gt; <span className="green">Setup React Project</span> -&gt; <span className="green">Setup GitHub Repo</span> -&gt; <span className="red">Comments</span></code></p>
+        <p className="contents"><code><span className="blue"><Link to="gitpages#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gitpages#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gitpages#react">Setup React Project</Link></span> -&gt; <span className="green"><Link to="gitpages#repo">Setup GitHub Repo</Link></span> -&gt; <span className="blue"><Link to="gitpages#comments">Comments</Link></span></code></p>
 
         <p id="overview" className="subject"><strong>Overview</strong></p>
         <p class="text">Are you looking for a free hosting service for your React application? If the application is for personal or development use, then GitPages may be a great alternative to more traditional website hosting services. </p>
 
-        <p id="overview" className="subject"><strong>Prerequisites</strong></p>
+        <p id="pre" className="subject"><strong>Prerequisites</strong></p>
           <ul className="text list">
-            <li>Installed Node JS,NPM, and NPX</li>
+            <li>Installed Node.js, NPM, and NPX</li>
             <li>Installed React</li>
             <li>Have a Github account</li>
           </ul>
 
-        <p id="overview" className="subject"><strong>Setting Up Your React Project</strong></p>
+        <p id="react" className="subject"><strong>Setting Up Your React Project</strong></p>
 
         <p className="text">First, create a GitHub repo for your website. Using the name <code>your-username.github.io</code> is recommended. Open a terminal and clone your new repo. Now run the following commands to create your React project and install <code>gh-pages</code>. </p>
           <p className="text"><SyntaxHighlighter className="codebox" language="bash" style={dracula}>
@@ -53,14 +54,14 @@ function Gitpages() {
           {code3}
 </SyntaxHighlighter></p>
 
-        <p id="overview" className="subject"><strong>Setting Up Your Github Repository</strong></p>
+        <p id="repo" className="subject"><strong>Setting Up Your Github Repository</strong></p>
 
         <p className="text">Your website is now build but you may still need to change some settings in your GitHub repo to make it viewable. If you go to <code>Settings</code> in your repo and scroll down, you should find a section titled <code>GitHub Pages</code>. It should look something like the screenshot below. </p>
 
         <img src={git_sh} alt="react logo" height="400" width="700"/>
         <p className="text">Make sure the <code>Branch</code> option has the <code>gh-pages</code> selected and leave the directory it looks for at / (root). After confirming these settings, you should be able to go to the link shown in these settings to see your published page. Note that it may take a few minutes for the site to be published so don't be alarmed if it doesn't appear immidiately.</p>
 
-        <p id="overview" className="subject"><strong>Comments</strong></p>
+        <p id="comments" className="subject"><strong>Comments</strong></p>
 
       </header>
     </div>
