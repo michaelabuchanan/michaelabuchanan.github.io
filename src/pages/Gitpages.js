@@ -61,6 +61,7 @@ function Gitpages() {
         <img src={git_sh} alt="react logo" height="400" width="700"/>
         <p className="text">Make sure the <code>Branch</code> option has the <code>gh-pages</code> selected and leave the directory it looks for at / (root). After confirming these settings, you should be able to go to the link shown in these settings to see your published page. Note that it may take a few minutes for the site to be published so don't be alarmed if it doesn't appear immidiately.</p>
 
+
         <p id="comments" className="subject"><strong>Comments</strong></p>
 
       </header>
