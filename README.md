@@ -3,5 +3,6 @@ See site for post on how to set up a website like this.
 
 To-Do:
 - [x] Set up webpage templates and routing
-- [ ] Write blogs for GANs and website setup
+- [x] Write blogs for GANs and website setup
+- [ ] Fill in rest of pages
 - [ ] Home page interactive terminal style theme (blinking cursor, bottom info window)
