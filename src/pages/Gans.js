@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 
 import result from "../fakes012000.png"
+import result2 from "../attempt_2_final.png"
 
 import './Article.css';
 
@@ -67,7 +68,8 @@ function Gans() {
         <img src={result} alt="react logo" height="600" width="900"/>
 
         <p className="text">Here are the fake images that were produced on the last round of attempt 2 training this model:</p>
-        <p className="text">*** Image will go here when training is complete ***</p>
+        <img src={result2} alt="react logo" height="600" width="900"/>
+
         <p id="comments" className="subject"><strong>Comments</strong></p>
 
       </header>
