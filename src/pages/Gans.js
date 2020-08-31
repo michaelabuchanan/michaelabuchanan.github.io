@@ -44,6 +44,7 @@ function Gans() {
         <tr>
           <th>Attempt</th>
           <th>Dataset</th>
+          <th>Dataset Size</th>
           <th>Resolution</th>
           <th>Run Time</th>
           <th>GPUs Used</th>
@@ -51,6 +52,7 @@ function Gans() {
         <tr>
           <th>1</th>
           <th>Custom web scraped</th>
+          <th>9524</th>
           <th>1024x1024</th>
           <th>2d 20h 51m</th>
           <th>4xNVIDIA V100</th>
@@ -58,6 +60,15 @@ function Gans() {
         <tr>
           <th>2</th>
           <th>Stanford dataset (<a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" target="_blank"><span className="blue">link</span></a>)</th>
+          <th>8144</th>
+          <th>1024x1024</th>
+          <th>2d 20h 56m</th>
+          <th>4xNVIDIA V100</th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th>Stanford dataset (<a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" target="_blank"><span className="blue">link</span></a>)</th>
+          <th>16,185</th>
           <th>1024x1024</th>
           <th>TBD</th>
           <th>4xNVIDIA V100</th>
@@ -69,6 +80,11 @@ function Gans() {
 
         <p className="text">Here are the fake images that were produced on the last round of attempt 2 training this model:</p>
         <img src={result2} alt="react logo" height="600" width="900"/>
+
+        <p className="text">Here are the fake images that were produced on the last round of attempt 2 training this model:</p>
+        <p>Image will be placed here once training finishes!</p>
+
+        
 
         <p id="comments" className="subject"><strong>Comments</strong></p>
 
