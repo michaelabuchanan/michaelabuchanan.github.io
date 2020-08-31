@@ -75,16 +75,20 @@ function Gans() {
         </tr>
         </table>
 
-        <p className="text">Here are the fake images that were produced on the last round of attempt 1 training this model:</p>
+        <p className="text">Here are the fake images that were produced on the last round of <strong>attempt 1</strong> training this model:</p>
         <img src={result} alt="react logo" height="600" width="900"/>
 
-        <p className="text">Here are the fake images that were produced on the last round of attempt 2 training this model:</p>
+        <p className="text">While the top middle picture was pretty good, the rest of the photos produced were not satisfactory. I began to wonder if the uncurated scraped dataset I was using was part of the problem. To test this, I decided to run another round of training using the same algorithm, this time using the Stanford car dataset linked in the table above. While this may not produce the "sports" car images I was hoping for, this test will allow me to determine if the image quality in the dataset was holding the model back.</p><br>
+
+        <p className="text">Here are the fake images that were produced on the last round of <strong>attempt 2</strong> training this model:</p>
         <img src={result2} alt="react logo" height="600" width="900"/>
 
-        <p className="text">Here are the fake images that were produced on the last round of attempt 2 training this model:</p>
+        <p className="text">Once again, only one of the pictures produced could pass as a car. These results seem to indicate that the dataset quality was not the main problem the model was facing. In this second attempt, I only used the training image dataset provided by Stanford in order to keep the dataset size roughly equivalent to the one used in the first attempt. However, I now wanted to find out if increasing the dataset size would significantly increase the quality of the output produced. Therefore, I added the testing dataset to the training dataset I already had to produce a new dataset which was about twice the size of those used previously.</p>
+
+        <p className="text">Here are the fake images that were produced on the last round of <strong>attempt 2 training this model:</p>
         <p>Image will be placed here once training finishes!</p>
 
-        
+
 
         <p id="comments" className="subject"><strong>Comments</strong></p>
 
