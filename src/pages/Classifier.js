@@ -9,14 +9,15 @@ import comments from '../Comments'
 
 import './Article.css';
 
-function Gans() {
+function Classifier() {
   return (
     <div className="App">
       <header className="App-header">
         <p className="breadcrumb"><code><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/">Articles</NavLink> &gt; GANs</code></p>
 
-        <p>Generating New Sports Cars using GANs</p>
-
+        <p>Sports Car Classification with Small Datasets</p>
+        <p className="text">Coming soon!</p>
+        {/*
         <img src={result} alt="react logo" height="350" width="500"/>
 
         <p className="contents"><code><span className="blue"><Link to="gans#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gans#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gans#react">Dataset</Link></span> -&gt; <span className="green"><Link to="gans#repo">Progressive GANs</Link></span> -&gt; <span className="green"><Link to="gans#results">Results</Link></span> -&gt;<span className="blue"><Link to="gans#comments"> Comments</Link></span></code></p>
@@ -97,9 +98,9 @@ function Gans() {
         <form noValidate autoComplete="off">
       <TextField id="standard-multiline-flexible" className="cbox" multiline rowsMax={10} varient="outlined" label="Type your comment here!"/>
     </form>
-
+    */}
       </header>
     </div>
   );
 }
-export default Gans;
+export default Classifier;

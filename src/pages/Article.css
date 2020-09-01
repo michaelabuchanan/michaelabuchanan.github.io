@@ -94,3 +94,14 @@ a:visited
 {
   color: lime;
 }
+
+.cbox{
+  color: blue;
+  width: 80%;
+}
+
+form
+{
+  padding-bottom: 100px;
+  color: blue;
+}

@@ -4,19 +4,18 @@ import { HashLink as Link } from 'react-router-hash-link';
 import TextField from '@material-ui/core/TextField';
 
 import result from "../fakes012000.png"
-import result2 from "../attempt_2_final.png"
-import comments from '../Comments'
 
 import './Article.css';
 
-function Gans() {
+function Coral() {
   return (
     <div className="App">
       <header className="App-header">
         <p className="breadcrumb"><code><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/">Articles</NavLink> &gt; GANs</code></p>
 
-        <p>Generating New Sports Cars using GANs</p>
-
+        <p>Using a Raspberry Pi and Google Coral for AI Edge Inference</p>
+        <p className="text">Coming soon!</p>
+        {/*
         <img src={result} alt="react logo" height="350" width="500"/>
 
         <p className="contents"><code><span className="blue"><Link to="gans#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gans#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gans#react">Dataset</Link></span> -&gt; <span className="green"><Link to="gans#repo">Progressive GANs</Link></span> -&gt; <span className="green"><Link to="gans#results">Results</Link></span> -&gt;<span className="blue"><Link to="gans#comments"> Comments</Link></span></code></p>
@@ -97,9 +96,9 @@ function Gans() {
         <form noValidate autoComplete="off">
       <TextField id="standard-multiline-flexible" className="cbox" multiline rowsMax={10} varient="outlined" label="Type your comment here!"/>
     </form>
-
+*/}
       </header>
     </div>
   );
 }
-export default Gans;
+export default Coral;
