@@ -5,6 +5,9 @@ import TextField from '@material-ui/core/TextField';
 
 import result from "../fakes012000.png"
 import result2 from "../attempt_2_final.png"
+import result3_1 from "../pics/fakes010296.png"
+import result3_2 from "../pics/fakes012000.png"
+
 import comments from '../Comments'
 
 import './Article.css';
@@ -87,17 +90,22 @@ function Gans() {
 
         <p className="text">Once again, only one of the pictures produced could pass as a car. These results seem to indicate that the dataset quality was not the main problem the model was facing. In this second attempt, I only used the training image dataset provided by Stanford in order to keep the dataset size roughly equivalent to the one used in the first attempt. However, I now wanted to find out if increasing the dataset size would significantly increase the quality of the output produced. Therefore, for my third attempt, I added the testing dataset to the training dataset I already had to produce a new dataset which was about twice the size of those used previously.<br /></p>
 
+        <p className="text">Here are the fake images that were produced on round 10296 of <strong>attempt 3</strong> training this model:</p>
+        <img src={result3_1} alt="react logo" height="600" width="900"/>
+
         <p className="text">Here are the fake images that were produced on the last round of <strong>attempt 3</strong> training this model:</p>
-        <p>Image will be placed here once training finishes!</p>
+        <img src={result3_2} alt="react logo" height="600" width="900"/>
 
+        <p className="text">It seems that using a larger dataset led to an increase in image quality. However, it seems that the images produced by the GANs in the middle of training were better than those produced at the final tick. The next steps for this project will include creating a more sports car exclusive dataset of a similar size to the one used in attempt 3 as well as potentially tweaking the model itself.</p>
 
+{/*
 
         <p id="comments" className="subject"><strong>Comments</strong></p>
 
         <form noValidate autoComplete="off">
       <TextField id="standard-multiline-flexible" className="cbox" multiline rowsMax={10} varient="outlined" label="Type your comment here!"/>
     </form>
-
+*/}
       </header>
     </div>
   );

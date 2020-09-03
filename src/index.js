@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 import firebase from './firebase.js';
 
+import Contact from './pages/Contact'
 import Gans from './pages/Gans'
 import Gitpages from './pages/Gitpages'
 import Classifier from './pages/Classifier'
@@ -19,6 +20,7 @@ ReactDOM.render(
     <HashRouter>
           <div className="content">
             <Route exact path="/" component={App}/>
+            <Route path="/contact" component={Contact}/>
             <Route path="/gans" component={Gans}/>
             <Route path="/gitpages" component={Gitpages}/>
             <Route path="/class" component={Classifier}/>

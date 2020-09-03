@@ -16,7 +16,7 @@ function Dsm() {
         <p>1990 Mitsubishi Eclipse GSX</p>
         <p className="text">Coming soon!</p>
 
-        <img src={car} alt="react logo" height="350" width="500"/>
+        <img src={car} alt="react logo" height="400" width="500"/>
 {/*
         <p className="contents"><code><span className="blue"><Link to="gans#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gans#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gans#react">Dataset</Link></span> -&gt; <span className="green"><Link to="gans#repo">Progressive GANs</Link></span> -&gt; <span className="green"><Link to="gans#results">Results</Link></span> -&gt;<span className="blue"><Link to="gans#comments"> Comments</Link></span></code></p>
 
