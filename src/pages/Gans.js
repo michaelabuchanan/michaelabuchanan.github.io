@@ -75,7 +75,7 @@ function Gans() {
           <th>Stanford dataset (<a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" target="_blank"><span className="blue">link</span></a>)</th>
           <th>16,185</th>
           <th>1024x1024</th>
-          <th>TBD</th>
+          <th>2d 20h 55m</th>
           <th>4xNVIDIA V100</th>
         </tr>
         </table>
