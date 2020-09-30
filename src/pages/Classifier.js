@@ -31,7 +31,7 @@ function Classifier() {
           </ul>
 
         <p id="react" className="subject"><strong>Dataset</strong></p>
-        <p className="text">In order to </p>
+        <p className="text">In order to create the dataset I used for training, I used a class-sorted variation of the Stanf</p>
 {/*
         <p id="repo" className="subject"><strong>Progressive GANs</strong></p>
         <p className="text">I decided to use a progressive GANs model for this experiment. The model I used was developed by a team at NVIDIA and is linked <a href="https://github.com/tkarras/progressive_growing_of_gans" target="_blank"><span className="blue">here</span></a>. The idea behind this variation of GANs is that the generator and discriminator are both trained starting at a very low resoluiton. The resolution is progressively increased throughout the training process until it eventually reaches the desired resolution (1024x1024 in this case). This makes it easier to achieve training stability, especially in situations like this one where there are a lot of fine details for the model to figure out.</p>
