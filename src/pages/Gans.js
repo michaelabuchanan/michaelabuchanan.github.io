@@ -7,6 +7,7 @@ import result from "../fakes012000.png"
 import result2 from "../attempt_2_final.png"
 import result3_1 from "../pics/fakes010296.png"
 import result3_2 from "../pics/fakes012000.png"
+import result4 from "../pics/fakes012000-2.png"
 
 import comments from '../Comments'
 
@@ -107,8 +108,7 @@ function Gans() {
         <p className="text">It seems that using a larger dataset led to an increase in image quality. However, it seems that the images produced by the GANs in the middle of training were better than those produced at the final tick. The next steps for this project will include creating a more sports car exclusive dataset of a similar size to the one used in attempt 3 as well as potentially tweaking the model itself.</p>
 
         <p className="text">So what happens if we increase the size of the dataset even more? I found another dataset on Kaggle (link in table above) which has over 60,000 images. Some of these images are only of interior shots of the cars so I wasn't sure what kind of results to expect but I was curious how much of an increase such a big jump in dataset size could produce.</p>
-        <p className="text">Image will go here when training is finished!</p>
-        // <img src={result3_2} alt="react logo" height="600" width="900"/>
+        // <img src={result4} alt="react logo" height="600" width="900"/>
 {/*
 
         <p id="comments" className="subject"><strong>Comments</strong></p>
