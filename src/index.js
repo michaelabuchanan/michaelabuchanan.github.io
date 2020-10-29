@@ -24,7 +24,7 @@ ReactDOM.render(
             <Route path="/gans" component={Gans}/>
             <Route path="/gitpages" component={Gitpages}/>
             <Route path="/class" component={Classifier}/>
-            <Route path="/fire" component={Firebase}/>
+            {/* <Route path="/fire" component={Firebase}/> */}
             <Route path="/coral" component={Coral}/>
             <Route path="/dsm" component={Dsm}/>
           </div>
