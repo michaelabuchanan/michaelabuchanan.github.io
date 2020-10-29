@@ -40,10 +40,10 @@ function Gans() {
 
         <p className="text">The dataset used for the second attempt at training was pulled from the Stanford Cars Dataset (linked <a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" target="_blank"><span className="blue">here</span></a>). The purpose of this run of training is to see if much better results can be achieved with a larger, more consistent dataset. While this won't give me the "sports car" results I am looking for, this round of training will help guide my next steps to improving the model I am hoping to create, whether that be improving the dataset used or tweaking the model itself.</p>
 
-        <p id="repo" className="subject" style={{color: 'green'}><strong>Progressive GANs</strong></p>
+        <p id="repo" className="subject" style={{color: 'green'}}><strong>Progressive GANs</strong></p>
         <p className="text">I decided to use a progressive GANs model for this experiment. The model I used was developed by a team at NVIDIA and is linked <a href="https://github.com/tkarras/progressive_growing_of_gans" target="_blank"><span className="blue">here</span></a>. The idea behind this variation of GANs is that the generator and discriminator are both trained starting at a very low resoluiton. The resolution is progressively increased throughout the training process until it eventually reaches the desired resolution (1024x1024 in this case). This makes it easier to achieve training stability, especially in situations like this one where there are a lot of fine details for the model to figure out.</p>
 
-        <p id="results" className="subject" style={{color: 'green'}><strong>Results</strong></p>
+        <p id="results" className="subject" style={{color: 'green'}}><strong>Results</strong></p>
 
         <p className="text">The table below outlines some of the results of using this variety of GANs as well as the final product achieved.</p>
         <table className="text tb" width="80%">
