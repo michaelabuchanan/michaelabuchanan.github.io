@@ -1,66 +1,67 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Bootstrap component imports
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
 
-        <p>
-          <code>&gt; Michaela Buchanan</code><br />
-          <code>==========================</code>
-        </p>
-        <div className="links">
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;___  <span className="about">Introduction</span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code><span className="about">About Me</span>  ----|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="about">Resume</span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="about"><NavLink exact activeClassName="active" style={{color: 'lime'}} to="/contact">Contact</NavLink></span></code></p>
+      <Navbar bg="light" expand="sm" id="navbar" noGutters>
+        <Navbar.Brand href="/">Michaela Buchanan</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#about">About Me</Nav.Link>
+            <NavDropdown title="Programming" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Motorsport" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Garage</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.3">Calendar</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></p>
+      <Container fluid id="parent" noGutters>
+        <Row style={{height: 100}}>
+          <Col id="left">
+            <div class="smoke"></div>
+            <div class="desc">
+              <p class="head"><b>Programming</b></p>
+              <p class="body">Blogs&ensp;&bull;&ensp;Projects&ensp;&bull;&ensp;Resume</p>
+            
+            </div>
+           
+          </Col>
+          <Col id="right">
+            <div class="smoke"></div>
+            <div class="desc">
+              <p class="head"><b>Motorsport</b></p>
+              <p class="body">Garage&ensp;&bull;&ensp;Projects&ensp;&bull;&ensp;Calendar</p>
+            </div>
 
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;___  <span className="articles"><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/gans">GANs Sports Car Generation</NavLink></span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="articles"><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/class">Classification with Small Dataset</NavLink></span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code><span className="articles">Articles</span>  ----|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="articles"><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/coral">Edge AI with RP & Google Coral</NavLink></span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="articles"><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/gitpages">Host React App on Github Pages</NavLink></span></code></p>
-{/* <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="articles"><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/fire">Firebase Database with Github Pages</NavLink></span></code></p> */}
+          </Col>
+        </Row>
 
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></p>
-
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;___  <span className="cars"><NavLink exact activeClassName="active" style={{color: '#9933CC'}} to="/dsm">1G DSM Street Build</NavLink></span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code><span className="cars">Garage</span> &nbsp; ----|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="cars">LS1 Camaro Drift Car</span></code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</code></p>
-          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          |___  <span className="cars">Yamaha R3 Track Bike</span></code></p>
-
-        </div>
-      </header>
+      </Container>
     </div>
   );
 }

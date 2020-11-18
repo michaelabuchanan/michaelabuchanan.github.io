@@ -5,13 +5,10 @@ import App from './App';
 import { Route, HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
-import firebase from './firebase.js';
-
 import Contact from './pages/Contact'
 import Gans from './pages/Gans'
 import Gitpages from './pages/Gitpages'
 import Classifier from './pages/Classifier'
-import Firebase from './pages/Firebase'
 import Coral from './pages/Coral'
 import Dsm from './pages/Dsm'
 
