@@ -11,6 +11,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+import { IoIosConstruct } from 'react-icons/io'
+
 function App() {
   return (
     <div className="App">
@@ -37,7 +39,7 @@ function App() {
             </NavDropdown>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
-          Site still under construction, so all links might not work yet! Please check back soon :)
+          <IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)
         </Navbar.Collapse>
       </Navbar>
 

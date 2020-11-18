@@ -9,11 +9,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Carousel from 'react-bootstrap/Carousel'
 
-// pages
+// icons from react-icons
 
 
 // images
 import gans from '../pics/fakes010296.png'
+import react_logo from "../react_logo.jpg"
 
 // CSS for this page
 import './Article.css';
@@ -43,7 +44,7 @@ function Blogs() {
                 </NavDropdown>
                 <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
-            Site still under construction, so all links might not work yet! Please check back soon :)
+            <IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)
             </Navbar.Collapse>
         </Navbar>
 
@@ -58,6 +59,16 @@ function Blogs() {
                                 <Carousel.Caption>
                                     <h3 class="c-title"><b>Generating New Cars Using GANs</b></h3>
                                     <p class="c-d">This blog post covers the basics of what GANs is and how you can use it to create images of nonexistent cars.</p>
+                                </Carousel.Caption>
+                            </a>
+                        </Carousel.Item>
+
+                        <Carousel.Item>
+                            <a href='#gitpages'>
+                                <img className="d-block w-100" src={react_logo} alt="gans blog pic" />
+                                <Carousel.Caption>
+                                    <h3 class="c-title"><b>How to host your React app on Git-Pages for free</b></h3>
+                                    <p class="c-d">This blog post covers how to host a React based page on Git-Pages.</p>
                                 </Carousel.Caption>
                             </a>
                         </Carousel.Item>
