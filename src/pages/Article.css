@@ -1,107 +1,47 @@
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-a:visited
+#left1
 {
-  color: inherit;
+  height: 100vh;
 }
 
- table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  /* align-items: center; */
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.tb
+#right1
 {
-  margin-left: auto;
-  margin-right: auto;
+  height: 100vh;
 }
 
-.links
+.carousel-inner {
+
+  max-height: 80%;
+  max-width: auto;
+  margin-top: 2%;
+  background-color: black !important;
+  
+  img {
+  
+  max-height: 400px;
+  
+  }
+  
+  }
+
+.carousel-caption
 {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 60px;
-  line-height: 0%;
+  background-color: black;
 }
 
-.breadcrumb
-{
-  text-align: left;
-  margin-left: 60px;
-  font-size: 16px;
-}
 
-.text
-{
-  font-size: 17px;
-  margin-left: 40px;
-  margin-right: 40px;
-  line-height: 150%;
-  text-align: left;
-}
+  #c-head
+  {
+    margin-top: 10%;
+    color: black;
+  }
 
-.subject
-{
-  font-size: 28px;
-}
+  #c-title
+  {
+    background-color: black;
+  }
 
-.contents
-{
-  font-size: 18px;
-}
-
-.list
-{
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.paper
-{
-  margin-left: 40px;
-  margin-right: 40px;
-  background: blue;
-}
-
-.blue
-{
-  color: cyan;
-}
-
-.green
-{
-  color: lime;
-}
-
-.cbox{
-  color: blue;
-  width: 80%;
-}
-
-form
-{
-  padding-bottom: 100px;
-  color: blue;
-}
+  #c-d
+  {
+    background-color: black;
+  }
