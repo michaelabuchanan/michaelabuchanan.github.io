@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 import Carousel from 'react-bootstrap/Carousel'
 
 // icons from react-icons
-
+import { IoIosConstruct } from 'react-icons/io'
 
 // images
 import gans from '../pics/fakes010296.png'
