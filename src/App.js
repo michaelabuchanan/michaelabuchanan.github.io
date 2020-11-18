@@ -22,7 +22,7 @@ function App() {
           <Nav className="mr-auto">
             <Nav.Link href="#about">About Me</Nav.Link>
             <NavDropdown title="Programming" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
+              <NavDropdown.Item href="#blog">Blogs</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -37,6 +37,7 @@ function App() {
             </NavDropdown>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
+          Site still under construction, so all links might not work yet! Please check back soon :)
         </Navbar.Collapse>
       </Navbar>
 
@@ -46,7 +47,7 @@ function App() {
             <div class="smoke"></div>
             <div class="desc">
               <p class="head"><b>Programming</b></p>
-              <p class="body">Blogs&ensp;&bull;&ensp;Projects&ensp;&bull;&ensp;Resume</p>
+              <p class="body"><a href="#blog">Blogs</a>&ensp;&bull;&ensp;Projects&ensp;&bull;&ensp;Resume</p>
             
             </div>
            

@@ -5,6 +5,7 @@ import App from './App';
 import { Route, HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
+import Blogs from './pages/Blogs'
 import Contact from './pages/Contact'
 import Gans from './pages/Gans'
 import Gitpages from './pages/Gitpages'
@@ -21,7 +22,7 @@ ReactDOM.render(
             <Route path="/gans" component={Gans}/>
             <Route path="/gitpages" component={Gitpages}/>
             <Route path="/class" component={Classifier}/>
-            {/* <Route path="/fire" component={Firebase}/> */}
+            <Route path="/blog" component={Blogs}/>
             <Route path="/coral" component={Coral}/>
             <Route path="/dsm" component={Dsm}/>
           </div>
