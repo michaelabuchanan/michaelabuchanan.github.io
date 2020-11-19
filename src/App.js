@@ -39,13 +39,13 @@ function App() {
             </NavDropdown>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
-          <IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)
+          <p id="construct"><IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)</p>
         </Navbar.Collapse>
       </Navbar>
 
       <Container fluid id="parent" noGutters>
         <Row style={{height: 100}}>
-          <Col id="left" sm="12" md lg="6">
+          <Col id="left" xs sm="12" md lg="6">
             <div class="smoke"></div>
             <div class="desc">
               <p class="head"><b>Programming</b></p>
@@ -54,7 +54,7 @@ function App() {
             </div>
            
           </Col>
-          <Col id="right" sm="12" md lg="6">
+          <Col id="right" xs sm="12" md lg="6">
             <div class="smoke"></div>
             <div class="desc">
               <p class="head"><b>Motorsport</b></p>

@@ -108,7 +108,7 @@ a:hover {
 .desc
 {
   position: relative;
-  width: 25%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -55%;
@@ -128,4 +128,23 @@ a:hover {
 .body
 {
   font-size: 15px;
+}
+
+@media screen and (max-width: 767px)
+{
+  #left
+  {
+    height: 50vh;
+  }
+
+  #right
+  {
+    height: 50vh;
+  }
+
+  #construct
+  {
+    max-height: 50px;
+    overflow: scroll;
+  }
 }
