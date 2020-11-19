@@ -9,6 +9,17 @@ import { HashLink as Link } from 'react-router-hash-link';
 import react_logo from "../react_logo.jpg"
 import git_sh from "../git_sh.png"
 
+// React Bootstrap components
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+// icons from react-icons
+import { IoIosConstruct } from 'react-icons/io'
+
 import './Article.css';
 
 const code1 =  '1\tcd your-username.github.io\n2\tnpx create-react-app your-react-project-className\n3\tnpm install gh-pages --save-dev'
@@ -20,11 +31,35 @@ const code3 = '1\tnpm run deploy'
 function Gitpages() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="breadcrumb"><code><NavLink exact activeClassName="active" style={{color: 'cyan'}} to="/">Articles</NavLink> &gt; Git-Pages</code></p>
-
-        <p><strong>How to host your React app on Git-Pages for free </strong></p>
+     
+     <Navbar bg="light" expand="sm" id="navbar" noGutters>
+            <Navbar.Brand href="/">Michaela Buchanan</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link href="#about">About Me</Nav.Link>
+                <NavDropdown title="Programming" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#blog">Blogs</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Motorsport" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Garage</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.3">Calendar</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+            <IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)
+            </Navbar.Collapse>
+        </Navbar>
+        
         <img src={react_logo} alt="react logo" height="350" width="500"/>
+        <p><strong>How to host your React app on Git-Pages for free </strong></p>
         <p className="contents"><code><span className="blue"><Link to="gitpages#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gitpages#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gitpages#react">Setup React Project</Link></span> -&gt; <span className="green"><Link to="gitpages#repo">Setup GitHub Repo</Link></span> -&gt; <span className="blue"><Link to="gitpages#comments">Comments</Link></span></code></p>
 
         <p id="overview" className="subject"><strong>Overview</strong></p>
@@ -62,9 +97,7 @@ function Gitpages() {
         <p className="text">Make sure the <code>Branch</code> option has the <code>gh-pages</code> selected and leave the directory it looks for at / (root). After confirming these settings, you should be able to go to the link shown in these settings to see your published page. Note that it may take a few minutes for the site to be published so don't be alarmed if it doesn't appear immidiately.</p>
 
 
-        <p id="comments" className="subject"><strong>Comments</strong></p>
-
-      </header>
+     
     </div>
   );
 }
