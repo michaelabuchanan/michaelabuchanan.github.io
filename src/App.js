@@ -45,7 +45,7 @@ function App() {
 
       <Container fluid id="parent" noGutters>
         <Row style={{height: 100}}>
-          <Col id="left" xs sm="12" md lg="6">
+          <Col id="left" md lg="6">
             <div class="smoke"></div>
             <div class="desc">
               <p class="head"><b>Programming</b></p>
@@ -54,7 +54,7 @@ function App() {
             </div>
            
           </Col>
-          <Col id="right" xs sm="12" md lg="6">
+          <Col id="right" md lg="6">
             <div class="smoke"></div>
             <div class="desc">
               <p class="head"><b>Motorsport</b></p>
