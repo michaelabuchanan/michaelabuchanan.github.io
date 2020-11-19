@@ -147,4 +147,14 @@ a:hover {
     max-height: 50px;
     overflow: scroll;
   }
+
+  .head 
+  {
+    font-size: 2vw;
+  }
+
+  .body
+  {
+    font-size: 1vw;
+  }
 }
