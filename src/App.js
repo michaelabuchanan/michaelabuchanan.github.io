@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactGA from 'react-ga';
 
 // Bootstrap component imports
 import Navbar from 'react-bootstrap/Navbar'
