@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactGA from 'react-ga';
 
 // Bootstrap component imports
 import Navbar from 'react-bootstrap/Navbar'
@@ -14,9 +15,10 @@ import Col from 'react-bootstrap/Col'
 import { IoIosConstruct } from 'react-icons/io'
 
 function App() {
+  ReactGA.initialize('G-Q071HHLEKY');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className="App">
-
       <Navbar bg="light" expand="sm" id="navbar" noGutters>
         <Navbar.Brand href="/">Michaela Buchanan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
