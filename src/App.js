@@ -15,8 +15,6 @@ import Col from 'react-bootstrap/Col'
 import { IoIosConstruct } from 'react-icons/io'
 
 function App() {
-  ReactGA.initialize('G-Q071HHLEKY');
-  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className="App">
       <Navbar bg="light" expand="sm" id="navbar" noGutters>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { Route, HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga'
 
 import Blogs from './pages/Blogs'
 import Contact from './pages/Contact'
@@ -12,6 +13,9 @@ import Gitpages from './pages/Gitpages'
 import Classifier from './pages/Classifier'
 import Coral from './pages/Coral'
 import Dsm from './pages/Dsm'
+
+ReactGA.initialize('G-N12TQ5FBD5');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
