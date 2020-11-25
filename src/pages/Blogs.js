@@ -55,7 +55,7 @@ function Blogs() {
                     <p id="c-head">Most recent posts:</p>
                     <Carousel id="car">
                        <Carousel.Item>
-                            <a href='#gitpages'>
+                            <a href='#gym'>
                                 <img className="d-block w-100" src={rl} alt="rl blog pic" />
                                 <Carousel.Caption>
                                     <h3 class="c-title"><b>Reinforcement Learning wtih OpenAI Gym and Baselines</b></h3>

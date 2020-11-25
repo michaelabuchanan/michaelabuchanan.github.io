@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 
 import rl from "../pics/rl.jpeg"
+import rl_vid from "../pics/rl_video.mp4"
 
 // React Bootstrap components
 import Navbar from 'react-bootstrap/Navbar'
@@ -71,9 +72,35 @@ function Gym() {
 
           <p id="results" className="subject" ><strong>Install and Usage</strong></p>
 
-          <p className="text">To install OpenAI Gym and Baselines, see their respective websites for installation instructions or check out my webpage for a set-by-step tutorial (link). All you have to do is install the Python libraries for these two tools on your GPU machine and you are ready to go. I chose to train using the DDPG (deep deterministic policy gradient) algorithm on the BipedalWalkerHardcore-v3 environment. </p>
+          <p className="text">To install OpenAI Gym and Baselines, first install Conda on your GPU machine (link to Conda install page). 
+Then, visit this link (https://drive.google.com/file/d/1Sd5GoTMZ9TypCBmU2SvaT39O66DMXr2_/view?usp=sharing ) to download the YAML file I created. This YAML file will allow you to easily install all of the packages you need to run OpenAI Gym and Baselines using your Conda environment. Once you downloaded the file, run the following two commands to install these packages into your environment. Make sure you are in the same directory as the YAML file you just downloaded.
+ </p>
 
-          
+          <p className="text">conda env update --file gym_env.yml</p>
+          <p className="text">conda activate gym</p>
+
+          <p className="text">Now that we’ve downloaded all the Python libraries we need, it’s time to install Baselines. First, install Git if you don’t have it already (link to Git install page). Visit this link to the Baselines GitHub repo and clone the repo onto your machine. Then, move into your new Baselines directory and run the command below to install Baselines using pip.</p>
+
+          <p className="text">pip install -e .</p>
+
+          <p className="text">At this point you should have all the tools you need to start training your model. Feel free to contact me if you run into issues following these instructions or during training.</p>
+
+          <p id="results" className="subject" ><strong>Training and Testing your Model</strong></p>
+
+          <p className="text">I chose to train using the DDPG (deep deterministic policy gradient) algorithm on the BipedalWalkerHardcore-v3 environment. However, you should feel free to try out one of the other algorithms listed on the Baselines README. Just be aware that some algorithms do not work on certain environments, so if you get errors when trying to train, try another algorithm. You can also try another environment available from Gym, although you may need to install some additional packages into your Conda environment to do so.</p>
+
+          <p className="text">I used the command below to initiate my model training. Make sure to change the save_path variable to where you would like the trained model to be saved. The nohup command and the & at the end allow you to run in the background and exit your terminal without interrupting training. This is useful because this command can run anywhere from several hours to several days depending on the algorithm you use, the number of timesteps specified, and your hardware. </p>
+
+          <p className="text">nohup python -m baselines.run --alg=ddpg --env=BipedalWalkerHardcore-v3 --network=mlp --num_timesteps=2e7 --save_path=/trained/model/location/goes/here &</p>
+
+          <p className="text">Once training is done, it’s easy to visually check the model’s performance using the run script included in Baselines. Below is the command I used to see some runs using the trained model and capture the output as .mp4 video files. Note that you will have to change your load_path variable to match the save_path from the previous command.</p>
+
+          <p className="text">python -m baselines.run --env=BipedalWalkerHardcore-v3 --num_timesteps=0 --load_path=/trained/model/location/goes/here --play --save_video_interval=1000 --save_video_length=1000</p>
+
+          <p className="text">Clips from your run will be saved to your /tmp directory. Here’s a clip of one of the videos I recorded from running these commands. As you can see, the model is not perfect by any means but it did learn to walk fairly well and has started figuring out how to traverse obstacles. Now, the next step would be to either try out different models and training parameters available in Baselines or try training using your own algorithm. Now that you have a basic starting point for reinforcement learning, stay tuned for a deeper dive into reinforcement learning algorithms and how to further improve your agent’s performance. </p>
+
+          <video autoplay="true"><source src={rl_vid} type="video/mp4" /></video>
+
           </Container>
     </div>
   );
