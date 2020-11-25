@@ -99,7 +99,7 @@ Then, visit this link (https://drive.google.com/file/d/1Sd5GoTMZ9TypCBmU2SvaT39O
 
           <p className="text">Clips from your run will be saved to your /tmp directory. Here’s a clip of one of the videos I recorded from running these commands. As you can see, the model is not perfect by any means but it did learn to walk fairly well and has started figuring out how to traverse obstacles. Now, the next step would be to either try out different models and training parameters available in Baselines or try training using your own algorithm. Now that you have a basic starting point for reinforcement learning, stay tuned for a deeper dive into reinforcement learning algorithms and how to further improve your agent’s performance. </p>
 
-          <video autoplay="true"><source src={rl_vid} type="video/mp4" /></video>
+          <video autoplay="true" loop="true"><source src={rl_vid} type="video/mp4" /></video>
 
           </Container>
     </div>
