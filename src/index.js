@@ -13,6 +13,7 @@ import Gitpages from './pages/Gitpages'
 import Classifier from './pages/Classifier'
 import Coral from './pages/Coral'
 import Dsm from './pages/Dsm'
+import Gym from './pages/Gym'
 
 ReactGA.initialize('G-N12TQ5FBD5');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -29,6 +30,7 @@ ReactDOM.render(
             <Route path="/blog" component={Blogs}/>
             <Route path="/coral" component={Coral}/>
             <Route path="/dsm" component={Dsm}/>
+            <Route path="/gym" component={Gym}/>
           </div>
         </HashRouter>
   </React.StrictMode>,

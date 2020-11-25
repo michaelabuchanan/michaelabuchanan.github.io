@@ -15,6 +15,7 @@ import { IoIosConstruct } from 'react-icons/io'
 // images
 import gans from '../pics/fakes010296.png'
 import react_logo from "../react_logo.jpg"
+import rl from "../pics/rl.jpeg"
 
 // CSS for this page
 import './Article.css';
@@ -50,9 +51,19 @@ function Blogs() {
 
         <Container fluid id="parent1" noGutters>
             <Row style={{height:100}}>
-                <Col id="left1" md={7}>
+                <Col id="left1" md={8}>
                     <p id="c-head">Most recent posts:</p>
                     <Carousel id="car">
+                       <Carousel.Item>
+                            <a href='#gitpages'>
+                                <img className="d-block w-100" src={rl} alt="rl blog pic" />
+                                <Carousel.Caption>
+                                    <h3 class="c-title"><b>Reinforcement Learning wtih OpenAI Gym and Baselines</b></h3>
+                                    <p class="c-d">This blog post covers how to easily get started with reinforcement learning.</p>
+                                </Carousel.Caption>
+                            </a>
+                        </Carousel.Item>
+
                         <Carousel.Item>
                             <a href='#gans'>
                                 <img className="d-block w-100" src={gans} alt="gans blog pic" />
@@ -75,8 +86,11 @@ function Blogs() {
                     </Carousel>
                 </Col>
 
-                <Col id="right1" md={5}> 
-                    stuff...
+                <Col id="right1" md={4}> 
+                    <p id="list-head">Blog Posts</p>
+                    <p class="entry"><span class="date">11/24/20:</span> <a href="#gym">Reinforcement Learning with OpenAI Gym and Baselines</a></p>
+                    <p class="entry"><span class="date">11/10/20:</span> <a href="#gans">Generating New Cars Using GANs</a></p>
+                    <p class="entry"><span class="date">08/25/20:</span> <a href="#gitpages">How to host your React App on GitPages</a></p>
                 </Col>
             </Row>
         </Container>
