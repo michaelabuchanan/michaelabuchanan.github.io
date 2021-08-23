@@ -14,6 +14,7 @@ import Classifier from './pages/Classifier'
 import Coral from './pages/Coral'
 import Dsm from './pages/Dsm'
 import Gym from './pages/Gym'
+import About from './pages/About'
 
 ReactGA.initialize('G-N12TQ5FBD5');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -24,6 +25,7 @@ ReactDOM.render(
           <div className="content">
             <Route exact path="/" component={App}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/about" component={About}/>
             <Route path="/gans" component={Gans}/>
             <Route path="/gitpages" component={Gitpages}/>
             <Route path="/class" component={Classifier}/>

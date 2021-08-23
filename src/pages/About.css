@@ -1,0 +1,17 @@
+#leftOne
+{
+    height: 100vh;
+    background: black;
+}
+
+#rightOne
+{
+    margin-top: 3%;
+    height: 100vh;
+}
+
+#row_stuff
+{
+    margin-top: 10%;
+    text-align: center;
+}

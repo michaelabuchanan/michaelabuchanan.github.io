@@ -57,6 +57,7 @@ a:hover {
 #parent
 {
   height: 100vh;
+  flex-flow: row wrap;
 }
 
 #left 
@@ -93,31 +94,33 @@ a:hover {
 {
   height: 100%;
   width: 100%;
-  background-color: white;
-  transition: opacity 0.5s, visibility 0.5s;
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.5s, visibility 0.5s;
   position: relative;
   z-index: 2;
 }
 
 .smoke:hover
 {
-  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.desc
+.inner
 {
-  position: relative;
+  flex-direction: column;
+}
+
+.box
+{
+  position: absolute;
   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -55%;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
   padding-top: 5px;
   padding-bottom: 1px;
   background-color: rgba(0,0,0,1);
   color: white;
   z-index: 3;
-  vertical-align: middle;
 }
 
 .head 
@@ -130,31 +133,47 @@ a:hover {
   font-size: 0.75vw;
 }
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 1080px)
 {
   #left
   {
     height: 50vh;
+    position: relative;
   }
 
   #right
   {
     height: 50vh;
+    position: relative;
   }
 
   #construct
   {
-    max-height: 50px;
+    max-height: 45px;
     overflow: scroll;
   }
 
   .head 
   {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
 
   .body
   {
-    font-size: 2vw;
+    font-size: 3vw;
   }
+
+  .box
+  {
+    position: absolute;
+    width: 60%;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    z-index: 3;
+  }
+
 }

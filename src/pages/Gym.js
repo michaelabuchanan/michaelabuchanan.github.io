@@ -1,57 +1,26 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
 
 import rl from "../pics/rl.jpeg"
 import rl_vid from "../pics/rl_video.mp4"
 
-// React Bootstrap components
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
 
-// icons from react-icons
-import { IoIosConstruct } from 'react-icons/io'
+import { CustomNavbar } from '../components/CustomNavbar';
 
 import './Article.css';
+
 
 function Gym() {
   return (
     <div className="App">
-      <Navbar bg="light" expand="sm" id="navbar" noGutters>
-            <Navbar.Brand href="/">Michaela Buchanan</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-                <Nav.Link href="#about">About Me</Nav.Link>
-                <NavDropdown title="Programming" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#blog">Blogs</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="Motorsport" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Garage</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3">Calendar</NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-            </Nav>
-            <IoIosConstruct />&ensp;Site still under construction, so all links might not work yet! Please check back soon :)
-            </Navbar.Collapse>
-        </Navbar>
+        <CustomNavbar />
 
        
         <Container fluid>
           
 
-          <img src={rl} alt="react logo" height="350" width="500"/>
+          <img src={rl} alt="react logo" height="350" width="500" id="image"/>
           <p id="header">Reinforcement Learning with OpenAI Gym and Baselines</p>
-          <p className="contents"><code><span className="blue"><Link to="gym#overview">Overview</Link></span> -&gt; <span className="blue"><Link to="gym#pre">Prerequisites</Link></span> -&gt; <span className="green"><Link to="gym#react">RL Intro</Link></span> -&gt; <span className="green"><Link to="gym#repo">Gym and Baselines</Link></span> -&gt; <span className="green"><Link to="gym#results">Install</Link></span></code></p>
 
           <p id="overview" className="subject" ><strong>Overview</strong></p>
           <p className="text">Are you interested in trying out reinforcement learning but don’t know where to begin? The OpenAI Gym and Baselines tools are a great resource for beginners looking to jumpstart their reinforcement learning journey. In this blog post I’ll be covering a brief introduction to reinforcement learning, what OpenAI Gym and Baselines are, and how to use them in your next project.  </p>
